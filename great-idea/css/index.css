@@ -82,20 +82,20 @@ nav {
 .fullNavBar {
 	/*position: relative;*/
 	/*width: 80%;*/
-	border: 2px solid #BADA55;
+	/* border: 2px solid #BADA55; */
 	/*margin: 20px;*/
 	/*display: flex;*/
 	/*justify-content: space-around;*/
 }
 
-.navBar {
+/* .navBar { */
 	/*display: inline-block;
 	width: 800px;
 	padding: 10px;
 	margin: 20px;*/
 	/*border: 2px solid #BADA55;*/
 	/*position: absolute;*/
-}
+/* } */
 .navBar {
 	/*display: flex;
 	justify-content: space-around;*/
@@ -134,13 +134,14 @@ nav {
 .innovation {
 	display: flex;
 	justify-content: space-between;
-	border: 2px solid #BADA55;
-	/*width: 900px;*/
+	/* border: 2px solid #BADA55; */
+	width: 900px;
 	/*position: relative;
 	width: 1000px;
 	height: 400px;
 	top: 130;
 	border-bottom: 1px solid black;*/
+	margin-left: 15%;
 }
 .innovationPrompt {
 	display: flex;
@@ -155,7 +156,7 @@ nav {
 	margin: 20px;
 	/*line-height: 1;*/
 	/*width: 50%;*/
-	border: 3px solid #BADA55;
+	/* border: 3px solid #BADA55; */
 
 }
 .prompt {
@@ -170,7 +171,7 @@ nav {
 	font-family: "bangers";
 	font-size: 70px;
 	/*height: 200px;*/
-	border: 2px solid #BADA55;
+	/* border: 2px solid #BADA55; */
 	/*font-weight: bold;*/
 }
 /* caused me some trouble,can't get the spaceing between innovation on demand and the button right*/
@@ -244,6 +245,7 @@ nav {
 .center {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 70px;
 }
 .lastPart {
 	display: flex;
@@ -270,60 +272,141 @@ nav {
 	/*display: inline-block;
 	width: 310px;*/
 
-	border: 2px solid #BADA55;
+	/* border: 2px solid #BADA55; */
 	
 	padding: 10px;
 	/*margin: 5px;*/
 
 }
+hr {
+	width: 100%;
+	border: 1px solid black;
+}
 .address {
 	/*position: relative;*/
-	margin-left: 10%;
+	/* margin-left: 10%; */
 	/*margin-left: 10%;
 	margin-top: 5%;*/
+	padding-top: 20px;
 }
-/*can't seem to center it*/
+
 .copyright {
 	text-align: center;
 }
 
 /* for services.html*/
 
-.boxes {
-	height: 800px;
+.everything {
+	width: 900px;
+	margin: 15px;
+
+}
+.services-header-img {
+	width: 100%;
+	margin-top: 20px;
+}
+.ServiceDescription {
+	margin-top: 20px;
+
+}
+.ServiceDescription h1 {
+	font-size: 20px;
+}
+.collectionOfBoxes {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-content: space-between;
+	justify-content: center;
+}
+.boxes {
+	/* height: 800px; */
+	width: 900px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/* align-content: space-between; */
+	/* margin-bottom: 30px; */
+	/* border: 2px solid #BADA55; */
 }
 
 .box {
-	/*width: 50%;
-	height: 50%;*/
+	margin: 15px 0px;
+	width: 46%;
+	/*height: 50%;*/
 	/*display: flex;
-	flex-direction: row;
-	border: 2px solid #BADA55;*/
+	flex-direction: row;*/
+	/*border: 1px solid #BADA55;*/
 }
+/* for some reason, border-box is not working so have to handle the with adjustment manually*/
 .service {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-content: flex-start;
-	border: 2px solid #BADA55;
-	width: 400px;
-	height: 250px;
+	border: 1px solid black;
+	background: rgb(236, 236, 236);
+	/*box-sizing: border-box;*/
+
+	/* width: 300px; */
+	/* height: 250px; */
 	padding: 20px;
 
 }
-.service p:first-of-type{
-	width: 360px;
-	height: 100px;
-	border: 2px solid #BADA55;
+
+.service p{
+	/* width: 250px; */
+	/* height: 100px; */
+	/* border: 2px solid #BADA55; */
+	/*box-sizing: border-box;*/
+	margin-bottom: 10px;
+
 }
 button {
 	width: 40%;
 	padding: 10px;
-	border-radius: 2px;
-	font-weigh: 
+	border-radius: 3px;
+	border: 1px solid black;
+	font-size: 11px; 
+	/*font-weigh: */
 
+}
+
+.centerService {
+	/*width: 900px;*/
+	/*border: 2px solid #BADA55;*/
+	display: flex;
+
+	justify-content: left;
+	margin-top: 35px;
+
+}
+.services {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	/* border: 2px solid #BADA55; */
+
+}
+.facts {
+	display: flex;
+	flex-direction: column;
+	/*align-content: flex-start;*/
+	text-align: left;
+	/* border: 2px solid #BADA55; */
+
+}
+.lastParagraph {
+	width: 400px;
+}
+ul {
+	/* border: 2px solid #BADA55; */
+	margin-left: -20px;
+	list-style-type: square;
+
+}
+.services-info-img {
+	/*width: 400px;
+	height: 300px;*/
+	/*max-width:100%;*/
+	width: 46%;
+    height: 240px;
 }
